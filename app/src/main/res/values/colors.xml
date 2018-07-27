@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#ffffff</color>
+    <!--<color name="colorAccent">#FF4081</color>-->
+    <color name="colorAccent">#33b5e5</color>
+    <color name="color_line">#cacaca</color>
+    <color name="textSelectColor">#F7BD58</color>
+    <color name="textUnselectColor">#858585</color>
+    <color name="gray_bg">#F7F7F7</color>
+    <color name="bg">#ffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="text_describe">#444444</color>
+    <color name="black">#000000</color>
+    <color name="blue">#33b5e5</color>
+    <color name="text_pay">#212121</color>
+    <color name="text_pay_type">#444444</color>
+    <color name="window_bg">#8000</color>
+    <color name="keyboard_bg">#BDBDBD</color>
+    <color name="iv_back_bg">#F5F5F5</color>
+    <color name="key_normal_bg">#F5F5F5</color>
+    <color name="key_pressed_bg">#33000000</color>
+    <color name="btn_gray">#E0E0E0</color>
+    <color name="pay_ok">#F5A944</color>
+    <color name="Background">#F7F8FA</color>
+    <color name="font_h1">#333333</color>
+    <color name="font_h2">#666666</color>
+    <color name="font_bl">#4a90e2</color>
+    <color name="font_gray">#999999</color>
+    <color name="bt_login">#ef8a34</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="blue2">#0066FF</color>
+    <color name="no_color">#00000000</color>
+    <color name="bg_color">#F4F3F3</color>
+    <color name="bg_color_deep">#E5E5E5</color>
+    <color name="text_color">#434343</color>
+    <color name="black_half">#50000000</color>
+    <color name="single_searcg_bg">#8B8682</color>
+    <color name="common_top_bar_blue">#22292c</color>
+</resources>

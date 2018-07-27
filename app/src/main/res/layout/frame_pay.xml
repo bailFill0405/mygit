@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="1200px"
+    android:background="@drawable/radio_bg">
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="87px"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <jx.edu.com.jiangxue.ui.view.CircleImageView
+                android:id="@+id/iv_head"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/head_portrait_boy" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40px"
+                android:text="何星"
+                android:textColor="@color/textUnselectColor"
+                android:textSize="17sp" />
+        </LinearLayout>
+    </RelativeLayout>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/rl"
+        android:textSize="15sp"
+        android:id="@+id/tv_pay_type"
+        android:layout_marginBottom="41.5px"
+        android:text="支付金额"
+        android:textColor="@color/text_pay_type"
+        style="@style/left_and_right_indentation"
+        android:layout_above="@+id/ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:id="@+id/ll"
+        android:gravity="center|left"
+        style="@style/left_and_right_indentation"
+        android:layout_marginBottom="15dp"
+        android:layout_above="@+id/vline"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iv_pay_rmb"
+            android:src="@mipmap/rmb_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:maxLength="9"
+            android:maxLines="1"
+            android:inputType="number"
+            android:background="@null"
+            android:id="@+id/et_pay_rmb"
+            android:layout_marginLeft="50px"
+            android:text="200"
+            android:textSize="25sp"
+            android:textColor="@color/text_pay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/vline"
+        style="@style/view_line_indentation"
+        android:layout_above="@+id/bt_confirm"
+        android:layout_marginBottom="100px" />
+
+    <Button
+        android:id="@+id/bt_confirm"
+        style="@style/left_and_right_indentation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="95px"
+        android:background="@drawable/radio_bt"
+        android:text="确认"
+        android:textColor="@color/bg"
+        android:textSize="17sp" />
+</RelativeLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jx.edu.com.jiangxue.ui.view.SmartScollview xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Background"
+    android:scrollbars="none"
+    android:id="@+id/scrollView"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="jx.edu.com.jiangxue.ui.activity.CodeLoginActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/appbar2" />
+
+        <TextView
+            android:id="@+id/tv_h1"
+            style="@style/text_h1"
+            android:text="欢迎登录" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/text_h2"
+                android:text="登录注册表示同意" />
+
+            <TextView
+                android:id="@+id/tv_clause"
+                style="@style/text_b1"
+                android:text="用户协议、隐私条款" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/linearLayout_white"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:id="@+id/ll_picker"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <TextView
+                    android:textColor="@color/black"
+                    android:id="@+id/tv_country_code"
+                    android:layout_marginTop="0dp"
+                    android:gravity="center"
+                    android:text="+86"
+                    style="@style/text_h2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+                <ImageView
+                    android:layout_marginTop="2dp"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center"
+                    android:src="@drawable/down"
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <EditText
+                android:layout_marginLeft="10dp"
+                android:id="@+id/et_phone"
+                style="@style/text_gray"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:digits="0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ@."
+                android:hint="输入手机号"
+                android:inputType="number"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@color/font_h2" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bt_code"
+            style="@style/bottom_bt"
+            android:alpha="0.5"
+            android:text="获取验证码" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_pwd_login"
+                style="@style/text_h2"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="15dp"
+                android:text="用账号密码码登录" />
+
+            <TextView
+                android:id="@+id/tv_phone_update"
+                style="@style/text_h2"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginTop="15dp"
+                android:text="手机号已更换" />
+        </RelativeLayout>
+    </LinearLayout>
+</jx.edu.com.jiangxue.ui.view.SmartScollview>

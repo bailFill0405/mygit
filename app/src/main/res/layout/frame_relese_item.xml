@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@color/bg"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/ll_grade"
+        android:gravity="center|left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="53px"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/iv_grade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/un_select_grade" />
+        <TextView
+            android:id="@+id/tv_grade"
+            style="@style/realese_item_textView"
+            android:text="年级等级" />
+    </LinearLayout>
+    <View
+        android:id="@+id/vline4"
+        style="@style/view_line"
+        android:layout_below="@+id/ll_grade"
+        android:layout_marginBottom="53px"
+        android:layout_marginLeft="15dp" />
+    <LinearLayout
+        android:id="@+id/ll_subject"
+        android:gravity="center|left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vline4"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="53px"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/iv_subject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/un_select_subject" />
+        <TextView
+            android:id="@+id/tv_subject"
+            style="@style/realese_item_textView"
+            android:text="科目类别" />
+    </LinearLayout>
+    <View
+        android:id="@+id/vline3"
+        style="@style/view_line"
+        android:layout_below="@+id/ll_subject"
+        android:layout_marginBottom="53px"
+        android:layout_marginLeft="15dp" />
+    <LinearLayout
+        android:id="@+id/ll_location"
+        android:gravity="center|left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vline3"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="53px"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/iv_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/un_location" />
+        <TextView
+            android:id="@+id/tv_location"
+            style="@style/realese_item_textView"
+            android:text="我的位置" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/vline2"
+        style="@style/view_line"
+        android:layout_below="@+id/ll_location"
+        android:layout_marginLeft="15dp" />
+
+</RelativeLayout>

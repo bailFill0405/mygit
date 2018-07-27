@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical">
+    <include layout="@layout/item_question_holder" />
+
+    <include layout="@layout/item_likes_or_comment" />
+
+    <View
+        style="@style/view_line"
+        android:layout_height="20px"
+        android:layout_marginTop="43px" />
+</LinearLayout>

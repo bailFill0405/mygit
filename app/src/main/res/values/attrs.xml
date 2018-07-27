@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr format="dimension" name="borderRadius"/>
+
+    <attr name="type">
+
+        <enum name="circle" value="0"/>
+
+        <enum name="round" value="2"/>
+
+    </attr>
+
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+        <attr name="border_overlay" format="boolean" />
+    </declare-styleable>
+
+
+
+    <declare-styleable name="RoundImageView">
+        <attr name="borderRadius" />
+
+        <attr name="type"/>
+
+    </declare-styleable>
+
+
+
+
+
+    <declare-styleable name="CircularIndicatorView">
+
+        <!--声明我们的属性，名称为default_size,取值类型为尺寸类型（dp,px等）-->
+
+        <attr format="dimension" name="default_size"/>
+
+        <attr format="integer" name="value"/>
+
+        <attr format="color" name="color1"/>
+
+        <attr format="color" name="color2"/>
+
+        <attr format="color" name="color3"/>
+
+        <attr format="color" name="color4"/>
+
+    </declare-styleable>
+    <declare-styleable name="PayPsdInputView">
+
+
+
+        <attr name="maxCount" format="integer" />
+
+        <attr name="circleColor" format="color" />
+
+        <attr name="bottomLineColor" format="color" />
+
+        <attr name="radius" format="dimension" />
+
+        <attr name="divideLineWidth" format="dimension" />
+
+        <attr name="divideLineColor" format="color" />
+
+        <attr name="rectAngle" format="dimension" />
+
+        <attr name="focusedColor" format="color"/>
+
+        <attr name="psdType" format="enum">
+
+            <enum name="weChat" value="0" />
+
+            <enum name="bottomLine" value="1" />
+
+        </attr>
+
+    </declare-styleable>
+</resources>

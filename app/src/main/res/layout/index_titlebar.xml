@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/navigation_height"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:background="@color/bg">
+    <ImageView
+        android:id="@+id/iv_camera"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="15dp"
+        android:layout_alignParentLeft="true"
+        android:src="@mipmap/camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <com.flyco.tablayout.CommonTabLayout
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:layout_toLeftOf="@+id/iv_scan"
+        android:layout_toRightOf="@+id/iv_camera"
+        android:layout_centerInParent="true"
+        android:id="@+id/tl_1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#ffffff"
+        app:tl_iconVisible="false"
+        app:tl_indicator_corner_radius="5dp"
+        app:tl_indicator_height="3dp"
+        app:tl_indicator_anim_enable="true"
+        app:tl_indicator_color="@color/textSelectColor"
+        app:tl_indicator_gravity="BOTTOM"
+        app:tl_indicator_width="18dp"
+        app:tl_indicator_width_equal_title="true"
+        app:tl_tab_space_equal="true"
+        app:tl_textBold="SELECT"
+        app:tl_textSelectColor="#212121"
+        app:tl_textUnselectColor="#858585"
+        app:tl_textsize="17sp" />
+    <ImageView
+        android:id="@+id/iv_scan"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentRight="true"
+        android:src="@mipmap/scan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

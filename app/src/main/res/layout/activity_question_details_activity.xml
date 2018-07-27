@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical"
+    tools:context="jx.edu.com.jiangxue.ui.activity.QuestionDetailsActivity">
+
+    <include
+        android:id="@+id/appbar"
+        layout="@layout/appbar2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/navigation_height"
+        android:layout_alignParentTop="true" />
+
+    <View
+        android:id="@+id/vline"
+        style="@style/view_line"
+        android:layout_below="@+id/appbar" />
+
+    <include
+        android:id="@+id/il2"
+        layout="@layout/item_question_holder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vline" />
+
+    <include
+        android:id="@+id/il3"
+        layout="@layout/item_likes_or_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/il2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottom_navigation_height"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@mipmap/radio_matrix_left">
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="200"
+                android:textColor="@color/bg"
+                android:textSize="17sp" />
+            <TextView
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="17px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="积分"
+                android:textColor="@color/bg"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginLeft="1dp"
+            android:id="@+id/tv_answer"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@mipmap/radio_matrix_right"
+            android:gravity="center"
+            android:text="解答"
+            android:textColor="@color/bg"
+            android:textSize="15sp" />
+    </LinearLayout>
+</RelativeLayout>

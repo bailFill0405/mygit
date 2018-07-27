@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/bottom_navigation_height"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:showDividers="beginning">
+    <!--android:divider="@drawable/div_ll_hor_line"-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:weightSum="5">
+
+        <TextView
+            android:drawablePadding="@dimen/margin_5dp"
+            android:id="@+id/mTvIndex"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="首页"
+            android:textColor="@color/textSelectColor"
+            android:textSize="10dp" />
+
+        <TextView
+            android:drawablePadding="@dimen/margin_5dp"
+            android:id="@+id/mTvMsg"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="消息"
+            android:textColor="@color/textUnselectColor"
+            android:textSize="10dp" />
+        <ImageView
+            android:src="@mipmap/add"
+            android:id="@+id/mIvAdd"
+            android:layout_width="0dp"
+            android:layout_height="146px"
+            android:layout_weight="1"
+            android:gravity="center" />
+        <TextView
+            android:drawablePadding="@dimen/margin_5dp"
+            android:id="@+id/mTvFind"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="发现"
+            android:textColor="@color/textUnselectColor"
+            android:textSize="10dp" />
+        <TextView
+            android:drawablePadding="@dimen/margin_5dp"
+            android:id="@+id/mTvUser"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="我的"
+            android:textColor="@color/textUnselectColor"
+            android:textSize="10dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

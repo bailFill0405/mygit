@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    tools:context="jx.edu.com.jiangxue.ui.activity.PayOkActivity">
+    <include layout="@layout/appbar2"
+        android:visibility="gone"/>
+    <ImageView
+        android:id="@+id/iv"
+        android:src="@mipmap/pay_ok"
+        android:layout_marginTop="243px"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_msg"
+        android:text="支付成功"
+        android:textColor="@color/pay_ok"
+        android:textSize="17sp"
+        android:layout_marginTop="106px"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/bt_ok"
+        android:background="@drawable/bt_boder"
+        android:textColor="@color/pay_ok"
+        android:textSize="17sp"
+        android:text="完成"
+        android:layout_marginBottom="357px"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="500px"
+        android:layout_height="120px" />
+</RelativeLayout>

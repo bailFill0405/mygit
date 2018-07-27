@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical"
+    tools:context="jx.edu.com.jiangxue.ui.activity.AlreadyAnsweredDetailsActivity">
+
+    <include
+        android:id="@+id/appbar"
+        layout="@layout/appbar2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/navigation_height"
+        android:layout_alignParentTop="true" />
+
+    <View
+        android:id="@+id/vline"
+        style="@style/view_line"
+        android:layout_below="@+id/appbar" />
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/appbar"
+        app:srlAccentColor="@android:color/white"
+        app:srlEnablePreviewInEditMode="true"
+        app:srlPrimaryColor="#444444">
+
+        <com.scwang.smartrefresh.header.TaurusHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <include
+                    android:id="@+id/il_student"
+                    layout="@layout/item_question_holder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <View
+                    android:id="@+id/vline2"
+                    style="@style/view_line"
+                    android:layout_height="20px"
+                    android:layout_below="@+id/il_student"
+                    android:layout_marginTop="43px" />
+
+                <include
+                    android:id="@+id/il_teacher"
+                    layout="@layout/item_techear_answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/vline2" />
+
+                <View
+                    android:id="@+id/vline3"
+                    style="@style/view_line"
+                    android:layout_height="20px"
+                    android:layout_below="@+id/il_teacher"
+                    android:layout_marginTop="43px" />
+            </RelativeLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+        <com.scwang.smartrefresh.layout.footer.ClassicsFooter
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+</RelativeLayout>

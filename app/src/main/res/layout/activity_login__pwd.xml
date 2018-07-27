@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jx.edu.com.jiangxue.ui.view.SmartScollview xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Background"
+    android:orientation="vertical"
+    android:scrollbars="none"
+    android:id="@+id/scrollView"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="jx.edu.com.jiangxue.ui.activity.Login_PwdActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/appbar2"
+            android:id="@+id/appbar"/>
+
+        <TextView
+            android:id="@+id/tv_h1"
+            style="@style/text_h1"
+            android:text="请输入账号密码" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/text_h2"
+                android:text="登录注册表示同意" />
+
+            <TextView
+                android:id="@+id/tv_clause"
+                style="@style/text_b1"
+                android:text="用户协议、隐私条款" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/linearLayout_white">
+
+            <EditText
+                android:id="@+id/et_account"
+                style="@style/text_gray"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:digits="abcdefghigklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ@.0123456789"
+                android:hint="手机号或邮箱"
+                android:inputType="text"
+                android:imeOptions="actionDone"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@color/font_h2" />
+        </LinearLayout>
+
+        <View
+            style="@style/view_line_indentation"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="0dp" />
+
+        <LinearLayout
+            style="@style/linearLayout_white"
+            android:layout_marginTop="0dp">
+
+            <EditText
+                android:imeOptions="flagNoExtractUi"
+                android:id="@+id/et_pwd"
+                style="@style/text_gray"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="请输入登录密码"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@color/font_h2" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bt_login"
+            style="@style/bottom_bt"
+            android:alpha="0.5"
+            android:text="登录" />
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_code_login"
+                style="@style/text_h2"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="15dp"
+                android:text="用短信验证码登录" />
+
+            <TextView
+                android:id="@+id/tv_forget_pwd"
+                style="@style/text_h2"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginTop="15dp"
+                android:text="忘记密码" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</jx.edu.com.jiangxue.ui.view.SmartScollview>

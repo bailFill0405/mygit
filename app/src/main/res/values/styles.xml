@@ -1,0 +1,154 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowAnimationStyle">@style/AppAnimation</item>
+        <item name="android:windowBackground">@color/gray_bg</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+    </style>
+
+    <style name="AppAnimation">
+        <item name="android:activityOpenEnterAnimation">@anim/anim_slide_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/anim_slide_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/anim_slide_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/anim_slide_out</item>
+        <!--<item name="android:activityOpenEnterAnimation">@null</item>-->
+        <!--<item name="android:activityOpenExitAnimation">@null</item>-->
+        <!--<item name="android:activityCloseEnterAnimation">@null</item>-->
+        <!--<item name="android:activityCloseExitAnimation">@null</item>-->
+        <item name="android:taskOpenEnterAnimation">@null</item>
+        <item name="android:taskOpenExitAnimation">@null</item>
+        <item name="android:taskCloseEnterAnimation">@null</item>
+        <item name="android:taskCloseExitAnimation">@null</item>
+        <item name="android:taskToFrontEnterAnimation">@null</item>
+        <item name="android:taskToFrontExitAnimation">@null</item>
+        <item name="android:taskToBackEnterAnimation">@null</item>
+        <item name="android:taskToBackExitAnimation">@null</item>
+    </style>
+
+    <style name="view_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/color_line</item>
+    </style>
+
+    <style name="view_line_indentation">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/color_line</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_marginRight">15dp</item>
+    </style>
+
+    <style name="myToast">
+        <item name="textBold">true</item>
+        <item name="textColor">#fff</item>
+        <item name="textSize">13sp</item>
+        <item name="colorBackground">@color/textSelectColor</item>
+        <item name="solidBackground">true</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="strokeColor">#fff</item>
+        <!--<item name="iconStart">@drawable/ic</item>-->
+        <!--<item name="iconEnd">@drawable/ic</item>-->
+        <item name="length">LONG</item>
+        LONG or SHORT
+        <item name="gravity">center</item>
+        top or center
+        <item name="radius">20dp</item>
+
+    </style>
+
+    <style name="realese_item_textView">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:layout_marginLeft">39px</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="main_menu_animstyle">
+        <item name="android:windowEnterAnimation">@anim/photo_dialog_in_anim</item>
+        <item name="android:windowExitAnimation">@anim/photo_dialog_out_anim</item>
+    </style>
+
+    <style name="transparentFrameWindowStyle" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@drawable/photo_choose_bg</item>
+    </style>
+
+    <style name="left_and_right_indentation">
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_marginRight">15dp</item>
+    </style>
+
+    <style name="AppTheme.Slide" parent="@style/AppTheme"> <!--Required-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@style/AppTheme.Slide.Animation</item>
+    </style>
+
+    <style name="AppTheme.Slide.Animation" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/anim_slide_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/anim_slide_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/anim_slide_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/anim_slide_out</item>
+    </style>
+
+    <style name="text_h1">
+        <item name="android:layout_marginTop">23dp</item>
+        <item name="android:textColor">@color/font_h1</item>
+        <item name="android:textSize">30dp</item>
+        <item name="android:layout_marginLeft">35dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="text_h2">
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:textColor">@color/font_h2</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:layout_marginLeft">35dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="text_b1">
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:textColor">@color/font_bl</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="linearLayout_white">
+        <item name="android:layout_marginTop">32dp</item>
+        <item name="android:background">@color/bg</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">48dp</item>
+    </style>
+
+    <style name="text_gray">
+        <item name="android:background">@color/bg</item>
+        <item name="android:gravity">center|left</item>
+        <item name="android:layout_marginLeft">35dp</item>
+        <item name="android:textColor">@color/font_gray</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="bottom_bt">
+        <item name="android:alpha">0.5</item>
+        <item name="android:layout_marginTop">25dp</item>
+        <item name="android:background">@drawable/radio_bt</item>
+        <item name="android:layout_marginLeft">30dp</item>
+        <item name="android:layout_marginRight">30dp</item>
+        <item name="android:textColor">@color/bg</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">48dp</item>
+    </style>
+</resources>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical"
+    tools:context="jx.edu.com.jiangxue.ui.activity.ReleaseActivity">
+    <include layout="@layout/appbar2"
+        android:visibility="gone"/>
+    <RelativeLayout
+        android:id="@+id/actionBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/navigation_height">
+
+        <TextView
+            android:id="@+id/tv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="15dp"
+            android:text="取消"
+            android:textColor="@color/textUnselectColor"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/tv_release"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="15dp"
+            android:text="发布"
+            android:textColor="@color/textSelectColor"
+            android:textSize="17sp" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/vline"
+        style="@style/view_line"
+        android:layout_below="@+id/actionBar" />
+
+    <EditText
+        android:maxLength="99"
+        android:id="@+id/et_inputMsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vline"
+        android:layout_gravity="left"
+        android:layout_marginTop="70px"
+        android:background="@null"
+        android:hint="请简单描述问题"
+        android:padding="15dp"
+        android:textColor="#000000"
+        android:textSize="15sp" />
+    <LinearLayout
+        android:layout_marginTop="125px"
+        android:layout_below="@+id/et_inputMsg"
+        android:orientation="vertical"
+        android:layout_marginBottom="171px"
+        android:layout_marginLeft="15dp"
+        android:layout_above="@+id/il_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:choiceMode="singleChoice"
+            android:divider="@null"
+            android:fadingEdge="none"
+            android:listSelector="@android:color/transparent"
+            android:scrollbarStyle="outsideOverlay"
+            app:layoutManager="android.support.v7.widget.GridLayoutManager"
+            app:spanCount="4"
+            tools:listitem="@layout/list_item_image" />
+        <!--<jx.edu.com.jiangxue.ui.view.RoundImageView2-->
+            <!--android:id="@+id/iv_add"-->
+            <!--android:src="@mipmap/add_img"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+    </LinearLayout>
+
+    <include
+        android:id="@+id/il_item"
+        android:layout_above="@+id/il_buttom"
+        layout="@layout/frame_relese_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="215px"/>
+    <include
+        android:id="@+id/il_buttom"
+        layout="@layout/frame_release_buttom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

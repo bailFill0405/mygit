@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <!--android:layout_marginTop="34px"-->
+
+    <TextView
+        android:gravity="center"
+        android:lines="1"
+        android:textSize="10sp"
+        android:id="@+id/tv_likes"
+        android:textColor="#2f2f2f"
+        android:text="小一上数学"
+        android:background="@drawable/tv_radio_border"
+        android:padding="7dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

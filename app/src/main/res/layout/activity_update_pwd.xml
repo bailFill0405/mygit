@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Background"
+    tools:context="jx.edu.com.jiangxue.ui.activity.UpdatePwdActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/appbar"
+            layout="@layout/appbar2"
+            android:background="@color/bg" />
+
+        <LinearLayout
+            style="@style/linearLayout_white"
+            android:layout_marginTop="0dp"
+            android:background="@color/Background">
+
+            <TextView
+                android:id="@+id/tv_msg"
+                style="@style/text_h2"
+                android:text="手机已经通过验证，请输入新密码" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/linearLayout_white"
+            android:layout_marginTop="0dp">
+
+            <EditText
+                android:id="@+id/et_pwd"
+                style="@style/text_gray"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="请输入新密码"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@color/font_h2" />
+        </LinearLayout>
+
+        <View
+            style="@style/view_line_indentation"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="0dp" />
+
+        <RelativeLayout
+            style="@style/linearLayout_white"
+            android:layout_marginTop="0dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/et_pwd_agin"
+                style="@style/text_gray"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="请再再次确认新密码"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@color/font_h2" />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tv_code"
+                style="@style/text_b1"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="15dp"
+                android:text="获取验证码" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/bt_reset"
+            style="@style/bottom_bt"
+            android:text="重置密碼" />
+    </LinearLayout>
+</RelativeLayout>

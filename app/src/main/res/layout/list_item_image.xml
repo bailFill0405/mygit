@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:sw="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+
+    <jx.edu.com.jiangxue.ui.view.RoundImageView2
+        android:id="@+id/iv_img"
+        sw:type="round"
+        android:scaleType="fitXY"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@mipmap/add_img" />
+
+</LinearLayout>
